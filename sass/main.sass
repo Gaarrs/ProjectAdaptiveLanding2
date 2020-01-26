@@ -1,0 +1,335 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+p
+	margin: 0px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'OpenSans', serif
+	overflow-x: hidden
+	color: $text
+	background-color: #ffffff
+
+nav
+	padding: 10px 3%
+	min-height: 90px
+	font-weight: 300
+	@media screen and ( max-width: 1024px )
+		text-align: center
+
+	span
+		&:hover
+			color: #42b549
+
+	button
+		background-color: #2c67b1
+		padding: 5px 35px
+		color: white
+		border: none
+		font-weight: 300
+		box-shadow: 0px 0px 5px #2c67b1
+	
+.nav-items
+	min-height: 90px
+
+.about
+	min-height: 600px
+	background-color: #ffffff
+	background-image: url(../img/about3.png)
+	background-size: cover
+	color: white
+	padding: 5% 7%
+
+.row-about
+	min-height: 500px
+
+.about-name
+	text-align: center
+	max-width: 350px
+	margin-bottom: 60px
+	h1
+		font-size: 5.9em
+		margin: 0px
+	h5
+		color: #1f006d
+		font-size: 1.3em
+		background-color: white
+		border-radius: 15px 0px
+		text-align: center
+		margin-top: -30px
+		padding: 10px 5px
+	h3
+		font-size: 1.8em
+		margin-top: -10px
+
+.name-item
+	margin: 15% 0%
+	img
+		margin-right: 15px
+		margin-bottom: 8px
+		width: auto
+	h5
+		font-weight: 300
+		font-size: 1.2em
+		font-style: italic
+		text-shadow: 1px 1px 2px black
+
+.options
+	min-height: 600px
+	background-color: #ffffff
+
+.row-options
+	min-height: 600px
+	margin: 0px
+
+.options-img
+	min-height: 600px
+	background-size: cover
+	background-image: url(../img/options.png)
+	@media screen and ( max-width: 992px  )
+		display: none
+	
+.options-content
+	padding: 0% 10%
+	text-align: end
+	
+	button
+		background-color: #f4213a
+		padding: 10px 35px
+		color: white
+		border: none
+		font-weight: 300
+		box-shadow: 0px 0px 5px #f4213a
+		margin-top: 30px
+
+.option-name
+	h3
+		font-weight: 400
+		font-size: 1.7em
+
+.option-subname
+	h2
+		font-weight: 700
+		font-size: 4em
+
+.option-info
+	p
+		color: #989898
+		font-weight: 300
+
+.option-select
+	height: 20px
+	width: 20px
+	background-color: #7f7f7f
+	border-radius: 50px
+	margin: 80px 5px 20px 5px
+	&:hover
+		background-color: #000000
+		cursor: pointer
+
+.benefits
+	background-color: #faf7f7
+	padding: 5% 0% 5% 10%
+	p
+		margin: 0px
+	@media screen and ( max-width: 768px  )
+		padding: 5% 10% 5% 10%
+
+.row-benefits
+	margin: 0px
+
+.benefits-bg
+	background-image: url(../img/benefits-bg.png)
+	background-size: contain
+	background-repeat: no-repeat
+	background-position: center
+
+.benefits-item
+	margin-bottom: 5%
+	padding: 50px 0px 50px 50px
+	max-width: 700px
+	&:hover
+		background-color: #ffffff
+		border-radius: 20px
+		box-shadow: 0px 0px 7px #00000033
+	p
+		font-weight: 300
+
+.benefit-name
+	width: 100%
+	font-size: 1.2em
+	margin-bottom: 15px
+	img
+		position: relative
+		float: left
+		margin-left: -40px
+		top: 4px
+	p
+		font-weight: 400
+	span
+		font-weight: 700
+
+.download
+	min-height: 600px
+	padding: 5%
+	background-image: url(../img/download-bg.png)
+	background-size: cover
+	background-position-x: -120px
+	@media screen and ( max-width: 768px )
+		background-position-x: -600px
+	@media screen and ( min-width: 1440px )
+		background-position-x: 0px
+
+.row-download
+	min-height: 600px
+	margin: 0px
+	span
+		font-weight: 800
+	h3
+		font-size: 2.5em
+		font-weight: 400
+		color: #ffffff
+		text-align: end
+	p
+		color: #ffffff
+		font-weight: 300
+		text-align: end
+
+.shop-img
+	margin: 50px 15px 10px 15px
+
+.news
+	padding: 5% 0%
+
+.row-news
+	margin: 0px
+	min-height: 600px
+
+.news-info
+	margin: 20px 20px
+	box-shadow: 0px 0px 10px #00000031
+	max-width: 400px
+	padding: 10px 20px 0px 20px
+
+.news-img1
+	min-height: 250px
+	background-position: center
+	background-image: url(../img/news1.png)
+.news-img2
+	min-height: 250px
+	background-position: center
+	background-image: url(../img/news2.png)
+.news-img3
+	min-height: 250px
+	background-position: center
+	background-image: url(../img/news3.png)
+
+.news-title
+	padding: 0px 10px
+	margin: 40px 0px 15px 0px
+
+.news-content
+	padding: 0px 20px
+	min-height: 130px
+	font-weight: 300
+
+.row-date
+	padding: 0px 10px
+	margin-top: 50px
+	margin-bottom: 10px
+	font-size: 0.9em
+	font-weight: 300
+
+.contact
+	min-height: 450px
+	background-image: url(../img/contact-bg.png)
+	background-size: cover
+	color: white
+	padding: 5%
+
+.row-contact
+	margin: 0px
+
+.contact-info
+	text-align: center
+	h2
+		font-size: 2.5em
+		font-weight: 400
+	span
+		font-weight: 700
+	p
+		font-weight: 300
+
+.form-content
+	margin: 50px 0px
+
+.input-area
+	width: 100%
+	border-radius: 5px
+	border: none
+	padding: 10px
+
+.message
+	min-height: 200px
+	margin-top: 20px
+
+.row-submit
+	text-align: center
+
+.submit-btn
+	margin-top: 20px
+	font-size: 0.8em
+	font-weight: 300
+	border: 1px solid white
+	color: white
+	background-color: #ffffff00
+	padding: 10px 50px
+
+footer
+	background-color: #42b549
+
+.row-footer
+	background-color: #42b549
+	color: white
+	margin: 0px
+	h5
+		font-size: 1.1em
+		margin: 20px 0px
+	a
+		color: white
+		cursor: pointer
+		font-weight: 300
+	img
+		margin-right: 15px
+	p
+		max-width: 80%
+		font-weight: 300
+	.row
+		@media screen and ( max-width: 768px )
+			justify-content: center
+
+.row-contacts
+	margin: 10px 0px
+
+.conts
+	margin: 5% 0px
+
